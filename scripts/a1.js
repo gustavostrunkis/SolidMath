@@ -1,26 +1,26 @@
 
 
-if(sessionStorage.getItem("button_id_1") == null || sessionStorage.getItem("button_id_1") == ""){
+if(sessionStorage.getItem("button_id") == null || sessionStorage.getItem("button_id") == ""){
     ty_item_2_onClick("item_1");
 }
 else{
-    ty_item_2_onClick(sessionStorage.getItem("button_id_1"));
+    ty_item_2_onClick(sessionStorage.getItem("button_id"));
 }
 
 function ty_item_2_onClick(button_id)
 {
-    sessionStorage.setItem("button_id_1", button_id);
+    sessionStorage.setItem("button_id", button_id);
 
-    var e = document.querySelector(".iframe_1");
+    let e = document.querySelector(".iframe");
 
     let numberOfButtons = 6;
 
-    var eButton = ["", "", "", "", "",""];
+    let eButton = ["", "", "", "", "",""];
 
     for(let i1 = 1; i1 <= numberOfButtons; i1++)
     {
         eButton[i1 - 1] = document.getElementById("item_" + i1.toString());
-        var icon = document.getElementById("icon_" + i1.toString());
+        let icon = document.getElementById("icon_" + i1.toString());
 
         if("item_" + i1.toString() == button_id)
         {

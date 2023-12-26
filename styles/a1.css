@@ -1,3 +1,9 @@
+
+
+/* 
+    barra_lateral_1
+*/
+
 *{
     padding: 0px;
     margin: 0px;
@@ -29,7 +35,7 @@ body{
     align-items: center;
 }
 
-.barra_lateral_1{
+.barra_lateral{
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -44,14 +50,14 @@ body{
     margin-left: 1vw;
 }
 
-.iframe_conteiner_1{
+.iframe_conteiner{
     display: flex;
     flex-direction: column;
     width: 100%;
     border: none;
 }
 
-.iframe_1{
+.iframe{
     display: flex;
     flex-direction: column;
     width: 100%;
