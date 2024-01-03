@@ -87,7 +87,7 @@ body{
     font-size: 1.3em;
 }
 
-.ty_conteiner_2{
+.ty_container{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -97,7 +97,7 @@ body{
     /* gap: 10px; */
 }
 
-.ty_item_2{
+.ty_item{
     --y_size: 60px;
 
     width: 100%;
@@ -112,7 +112,7 @@ body{
     padding-left: 3%;
 }
 
-.ty_item_2:hover{
+.ty_item:hover{
     background: rgb(calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), 0.9);
     cursor: pointer;
 }

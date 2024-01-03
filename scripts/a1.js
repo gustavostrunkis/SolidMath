@@ -1,13 +1,13 @@
 
 
 if(sessionStorage.getItem("button_id") == null || sessionStorage.getItem("button_id") == ""){
-    ty_item_2_onClick("item_1");
+    ty_item_onClick("item_1");
 }
 else{
-    ty_item_2_onClick(sessionStorage.getItem("button_id"));
+    ty_item_onClick(sessionStorage.getItem("button_id"));
 }
 
-function ty_item_2_onClick(button_id)
+function ty_item_onClick(button_id)
 {
     sessionStorage.setItem("button_id", button_id);
 
