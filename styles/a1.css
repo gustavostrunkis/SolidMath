@@ -188,10 +188,10 @@ div.poliPlat div.divsDefs{
     border: 1px solid rgba(255, 255, 255, 0);
 }
 
-.obj_conteiner_2 div.divsDefs:hover{
-    box-shadow: 10px 5px 5px rgba(255, 255, 255, 0.116);
+.obj_conteiner_2 div.divsDefs:hover, .outLabels_1:hover{
+    box-shadow: 0px 2px 14px rgba(255, 255, 255, 0.116);
     border: 1px solid rgba(255, 255, 255, 0.274);
-    transform: translate(-5px, -5px);
+    /* transform: translate(-5px, -5px); */
 }
 
 .obj_conteiner_2 div.obj_title_1{
@@ -420,10 +420,10 @@ power_1{
     padding: 0px 5px;
 }
 
-.outLabels_1:hover{
+/* .outLabels_1:hover{
     box-shadow: 1px 1px 20px 3px rgba(255, 255, 255, 0.116);
     border: 1px solid rgba(255, 255, 255, 0.274);
-}
+} */
 
 s{
     width: 5px;
