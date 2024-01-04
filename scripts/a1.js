@@ -1,5 +1,19 @@
 
 
+const menu_barra_lateral = document.querySelector("#bx-menu-container");
+
+menu_barra_lateral.addEventListener("click", () => {
+    let barra_lateral = document.querySelector(".barra_lateral");
+
+    if(barra_lateral.classList.contains("barra_lateral_2")){
+        barra_lateral.classList.remove("barra_lateral_2");
+    }
+    else{
+        barra_lateral.classList.add("barra_lateral_2");
+    }
+});
+
+
 if(sessionStorage.getItem("button_id") == null || sessionStorage.getItem("button_id") == ""){
     ty_item_onClick("item_1");
 }

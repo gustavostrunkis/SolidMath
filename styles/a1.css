@@ -120,6 +120,7 @@ body:has(> .main_1){
     border-left: 3px rgb(30, 119, 252, var(--s)) solid;
     /* border-left: 3px solid rgb(69, 171, 106, var(--s)); */
     padding-left: calc(var(--ty_item_left_padding) + 3px);
+    /* padding-right: var(--ty_item_left_padding); */
 }
 
 .ty_item:hover{
@@ -790,6 +791,10 @@ div.titulo{
     font-size: 1.2em !important;
 }
 
+.barra_lateral_2{
+    width: 350px !important;
+}
+
 
 @media (max-width: 500px){
     
@@ -814,6 +819,7 @@ div.titulo{
         width: 50px;
         margin: 0px;
         border-radius: 0px 10px 10px 0px;
+        background: rgba(16, 17, 22, 0.8);
     }
 
     .ty_item{
@@ -831,9 +837,7 @@ div.titulo{
 }
 
 @media (max-width: 1000px){
-    #bx-menu-container span{
-        display: none !important;
-    }
+
 }
 
 @media (max-width: 1200px){
