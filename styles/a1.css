@@ -17,6 +17,7 @@ body{
 
 body:has(> .main_1){
     width: 100vw;
+    scrollbar-width: 0px;
 }
 
 .p, h1, h2, h3, h4, h5, h6, a, div{
@@ -132,7 +133,7 @@ div#mainApresentacao{
     height: auto;
     background: rgb(16, 17, 22);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     padding-top: 30px;
     padding-bottom: 40px;
     margin-bottom: 50px;
@@ -283,12 +284,11 @@ div.poliPlat div.divsDefs{
 .d3_viewer_1{
     display: flex;
     flex-direction: column;
+    min-width: 300px;
     width: 50%;
-    min-width: 450px;
-    height: 60vh;
-    /* height: 50vw; */
-    /* height: 50em; */
-    /* border: 1px white solid; */
+    /* min-width: 450px; */
+    /* height: 60vh; */
+    height: 40vw;
 }
 
 .config_title_1{
@@ -355,12 +355,13 @@ input[type="range"]:focus{
 }
 
 .values_conteiner_1{
-    width: 95%;
+    /* width: 95%; */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    /* padding: 30px; */
     padding-top: 30px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -869,6 +870,16 @@ div.titulo{
         align-items: center !important;
         /* border-left: 3px rgb(30, 119, 252, var(--s)) solid !important; */
         padding-left: calc(var(--ty_item_left_padding) + 6px) !important;
+    }
+
+
+
+    .d3_viewer_1, .config_1{
+        width: 90%;
+    }
+
+    .d3_viewer_1{
+        height: 60vw;
     }
 }
 
