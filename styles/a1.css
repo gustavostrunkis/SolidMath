@@ -885,8 +885,12 @@ div.titulo{
         width: 90%;
     }
 
+    .config_1 div{
+        padding: 0px;
+    }
+
     .d3_viewer_1{
-        height: 60vw;
+        height: 80vw;
     }
 }
 
