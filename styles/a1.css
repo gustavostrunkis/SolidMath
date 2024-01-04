@@ -163,6 +163,7 @@ div#mainApresentacao{
     border-radius: 10px;
     transition: .4s;
     width: 40%;
+    min-width: 300px;
     flex-grow: 1;
     border: 1px solid rgba(255, 255, 255, 0);
 }
