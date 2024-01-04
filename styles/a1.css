@@ -76,28 +76,6 @@ body:has(> .main_1){
     border: none;
 }
 
-/* .ty_item_1{
-    --x_size: 100%;
-    --ty_item_height: 60px;
-
-    display: flex;
-    flex-direction: column;
-
-    width: var(--x_size);
-    height: var(--ty_item_height);
-
-    justify-content: center;
-    align-items: center;
-
-
-    text-align: center;
-    line-height: var(--ty_item_height);
-
-    border-bottom: 2px solid var(--title-color);
-
-    font-size: 1.3em;
-} */
-
 .ty_container{
     display: flex;
     flex-direction: column;
@@ -126,6 +104,10 @@ body:has(> .main_1){
 .ty_item:hover{
     background: rgb(calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), 0.9);
     cursor: pointer;
+}
+
+#item_6{
+    border-radius: 0px 0px 10px 0px;
 }
 
 .main_2{
@@ -560,6 +542,21 @@ img#logoIF{
     display: none;
 }
 
+#bx-menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* flex-grow: 1; */
+    display: none;
+}
+
+/* #bx-menu-container:hover{
+    background: rgb(calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), 0.9);
+    cursor: pointer;
+} */
+
 div.divsDefs{
     margin: 0;
 }
@@ -791,10 +788,6 @@ div.titulo{
     font-size: 1.2em !important;
 }
 
-.barra_lateral_2{
-    width: 350px !important;
-}
-
 
 @media (max-width: 500px){
     
@@ -810,6 +803,10 @@ div.titulo{
         margin: 0px;
     }
 
+    #bx-menu-container{
+        display: flex;
+    }
+
     #logoIFdiv{
         border: none;
         height: var(--ty_item_height);
@@ -819,7 +816,7 @@ div.titulo{
         width: 50px;
         margin: 0px;
         border-radius: 0px 10px 10px 0px;
-        background: rgba(16, 17, 22, 0.8);
+        background: rgba(16, 17, 22, 0.9);
     }
 
     .ty_item{
@@ -833,6 +830,44 @@ div.titulo{
 
     .ty_item i{
         margin: 0px;
+    }
+
+
+    .barra_lateral_2{
+        position: fixed;
+        left: 0px;
+        top: 5vh;
+        width: 350px !important;
+    }
+    
+    .barra_lateral_2 .ty_container .ty_item{
+        justify-content: left !important;
+        align-items: center !important;
+        border-left: 3px rgb(30, 119, 252, var(--s)) solid !important;
+        padding-left: calc(var(--ty_item_left_padding) + 3px) !important;
+    }
+    
+    .barra_lateral_2 .ty_container .ty_item i{
+        margin-right: var(--ty_item_left_padding) !important;
+    }
+    
+    .barra_lateral_2 .ty_container .ty_item span{
+        display: block;
+    }
+    
+    .barra_lateral_2 #logoIFdiv #bx-menu-container i{
+        margin-right: var(--ty_item_left_padding) !important;
+    }
+    
+    .barra_lateral_2 #logoIFdiv #bx-menu-container span{
+        display: block !important;
+    }
+    
+    .barra_lateral_2 #logoIFdiv #bx-menu-container{
+        justify-content: left !important;
+        align-items: center !important;
+        /* border-left: 3px rgb(30, 119, 252, var(--s)) solid !important; */
+        padding-left: calc(var(--ty_item_left_padding) + 6px) !important;
     }
 }
 
