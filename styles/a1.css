@@ -231,11 +231,11 @@ div.poliPlat div.divsDefs{
 }
 
 .obj_title_2{
-    --h_size: 60px;
+    /* --h_size: 60px; */
 
     width: 100%;
-    height: var(--h_size);
-    line-height: var(--h_size);
+    /* height: var(--h_size);
+    line-height: var(--h_size); */
     text-align: center;
     font-size: 26px;
     font-weight: bold;
@@ -383,12 +383,12 @@ input[type="range"]:focus{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
-    margin-top: 4vh;
-    --h_size: 60px;
+    /* margin-top: 4vh; */
+    /* --h_size: 60px; */
 
     width: 100%;
-    height: var(--h_size);
-    line-height: var(--h_size);
+    /* height: var(--h_size);
+    line-height: var(--h_size); */
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -417,9 +417,10 @@ power_1{
     transition: .4s;
     flex-grow: 1;
     border: 1px solid rgba(255, 255, 255, 0);
-    height: 60px;
+    min-height: 60px;
     border: 1px solid rgba(255, 255, 255, 0);
-    padding: 0px 5px;
+    padding: 10px 5px;
+    flex-wrap: wrap;
 }
 
 /* .outLabels_1:hover{
