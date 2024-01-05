@@ -421,6 +421,7 @@ power_1{
     border: 1px solid rgba(255, 255, 255, 0);
     padding: 10px 5px;
     flex-wrap: wrap;
+    line-height: 1.5em;
 }
 
 /* .outLabels_1:hover{
