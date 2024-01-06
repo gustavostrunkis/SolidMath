@@ -67,6 +67,10 @@ body:has(> .main_1)::-webkit-scrollbar{
     margin-left: 1vw;
 }
 
+.barra_lateral *{
+    user-select: none;
+}
+
 .iframe_conteiner{
     display: flex;
     flex-direction: column;
@@ -247,7 +251,7 @@ div.poliPlat div.divsDefs{
     width: 100%;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .content_conteiner_2{
@@ -563,22 +567,10 @@ img#logoIF{
     display: none;
 }
 
-/* #bx-menu-container:hover{
-    background: rgb(calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), calc(20 + 10 * var(--s)), 0.9);
-    cursor: pointer;
-} */
-
 div.divsDefs{
     margin: 0;
 }
 
-/* div.ty_item_2 a#linkSiteIFBarracao{
-    text-decoration: underline var(--subtitle-color);
-} */
-
-/* .barra_lateral_1 > .ty_item_2:nth-child(3){
-    text-align: center;
-} */
 
 i.bx{
     /* margin: 15px; */
@@ -591,10 +583,13 @@ div#logo{
     grid-template-columns: 1fr 1fr 1fr;
     transform-style: preserve-3d;
     grid-gap: 25px;
-    width: 400px;
+    max-width: 400px;
     position: relative;
     padding: 30px;
-    height: 500px;
+    max-height: 500px;
+    flex-grow: 1;
+    scale: 0.8;
+    /* scale: calc(40px / 100px); */
 }
 
 div#logo div.cardLogo{
@@ -719,23 +714,30 @@ div.divApresentacao{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    margin: 7%;
-    justify-content: space-between;
+    /* margin: 7%; */
+    margin-top: 7%;
+    justify-content: center;
+    gap: 40px;
 }
 
 div#apresentacao{
-    width: 55%;
+    /* --scale_1: 1; */
+
+    /* width: 100%; */
     padding-top: 0;
-    margin-left: 3%;
+    /* margin-left: 3%; */
+    width: clamp(300px, 50%, 100%);
+    flex-grow: 1;
+    /* flex-grow: var(--scale_1); */
 }
 
 div#apresentacao h2{
-    font-size: 6em;
+    font-size: 4em;
     color: var(--subtitle-color-2);
 }
 
 div#apresentacao div.titulo p{
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 10px;
 }
 
@@ -759,7 +761,7 @@ div.initCards p{
 }
 
 div.titulo{
-    width: 500px;
+    max-width: 500px;
 }
 
 .borderInitCards {
@@ -788,12 +790,12 @@ div.titulo{
     100% { background-position: 0% 50%; }
 }
 
-@media (max-width: 1950px){
+/* @media (max-width: 1950px){
     div#apresentacao, div#logo{
         margin: auto;
         margin-bottom: 10%;
     }
-}
+} */
 
 .bx{
     font-size: 1.2em !important;
